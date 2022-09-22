@@ -1,0 +1,38 @@
+/*
+Given an array of integers nums and an integer k, return the total number of subarrays whose sum equals to k.
+
+A subarray is a contiguous non-empty sequence of elements within an array.
+
+ 
+
+Example 1:
+
+Input: nums = [1,1,1], k = 2
+Output: 2
+Example 2:
+
+Input: nums = [1,2,3], k = 3
+Output: 2
+
+*/
+public class Solution {
+    public int SubarraySum(int[] nums, int k) {
+        Dictionary<int,int> map = new Dictionary<int,int>();
+        
+        int sum=0,ans=0;
+        map.Add(sum,1);
+        foreach(var it in nums){
+            sum += it;
+            int find = sum - k;
+            if(map.ContainsKey(find)){
+                ans += map[find];
+            }
+            if(map.ContainsKey(sum))
+                map[sum]++;
+            else
+                map.Add(sum,1);
+        }
+        return ans;
+
+    }
+}

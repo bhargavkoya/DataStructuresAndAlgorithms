@@ -1,0 +1,16 @@
+C:\Users\bhargava.koya\Desktop\C#\DSAPractice\DataStructures\Arrays\CSHConsoleApp\bin\Debug\net5.0\CSHConsoleApp.exe
+C:\Users\bhargava.koya\Desktop\C#\DSAPractice\DataStructures\Arrays\CSHConsoleApp\bin\Debug\net5.0\CSHConsoleApp.deps.json
+C:\Users\bhargava.koya\Desktop\C#\DSAPractice\DataStructures\Arrays\CSHConsoleApp\bin\Debug\net5.0\CSHConsoleApp.runtimeconfig.json
+C:\Users\bhargava.koya\Desktop\C#\DSAPractice\DataStructures\Arrays\CSHConsoleApp\bin\Debug\net5.0\CSHConsoleApp.runtimeconfig.dev.json
+C:\Users\bhargava.koya\Desktop\C#\DSAPractice\DataStructures\Arrays\CSHConsoleApp\bin\Debug\net5.0\CSHConsoleApp.dll
+C:\Users\bhargava.koya\Desktop\C#\DSAPractice\DataStructures\Arrays\CSHConsoleApp\bin\Debug\net5.0\ref\CSHConsoleApp.dll
+C:\Users\bhargava.koya\Desktop\C#\DSAPractice\DataStructures\Arrays\CSHConsoleApp\bin\Debug\net5.0\CSHConsoleApp.pdb
+C:\Users\bhargava.koya\Desktop\C#\DSAPractice\DataStructures\Arrays\CSHConsoleApp\obj\Debug\net5.0\CSHConsoleApp.csproj.AssemblyReference.cache
+C:\Users\bhargava.koya\Desktop\C#\DSAPractice\DataStructures\Arrays\CSHConsoleApp\obj\Debug\net5.0\CSHConsoleApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\bhargava.koya\Desktop\C#\DSAPractice\DataStructures\Arrays\CSHConsoleApp\obj\Debug\net5.0\CSHConsoleApp.AssemblyInfoInputs.cache
+C:\Users\bhargava.koya\Desktop\C#\DSAPractice\DataStructures\Arrays\CSHConsoleApp\obj\Debug\net5.0\CSHConsoleApp.AssemblyInfo.cs
+C:\Users\bhargava.koya\Desktop\C#\DSAPractice\DataStructures\Arrays\CSHConsoleApp\obj\Debug\net5.0\CSHConsoleApp.csproj.CoreCompileInputs.cache
+C:\Users\bhargava.koya\Desktop\C#\DSAPractice\DataStructures\Arrays\CSHConsoleApp\obj\Debug\net5.0\CSHConsoleApp.dll
+C:\Users\bhargava.koya\Desktop\C#\DSAPractice\DataStructures\Arrays\CSHConsoleApp\obj\Debug\net5.0\ref\CSHConsoleApp.dll
+C:\Users\bhargava.koya\Desktop\C#\DSAPractice\DataStructures\Arrays\CSHConsoleApp\obj\Debug\net5.0\CSHConsoleApp.pdb
+C:\Users\bhargava.koya\Desktop\C#\DSAPractice\DataStructures\Arrays\CSHConsoleApp\obj\Debug\net5.0\CSHConsoleApp.genruntimeconfig.cache

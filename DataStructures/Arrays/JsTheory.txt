@@ -1,0 +1,15 @@
+1.Reference Type:
+                var obj1={value:10};
+                var obj2=obj1;
+                var obj3={value:10};
+
+                obj1===obj2  ==>true
+                obj1===obj3 ===>false
+                []===[]  ==>false
+
+2.Context vs scope:
+Context tells where we are within object.
+ex: this keyword.
+
+3.Instatiation:
+It refers to when you make copy of object and reuse the code.

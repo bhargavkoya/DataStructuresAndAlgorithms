@@ -1,0 +1,30 @@
+Definion1:
+A data structure is a particular way of organizing data in a computer so that it can be used effectively.
+
+Definition2: 
+A data structure is a storage that is used to store and organize data. It is a way of arranging data on a computer so 
+that it can be accessed and updated efficiently. A data structure is not only used for organizing the data it is also used for 
+processing, retrieving, and storing data. There are different basic and advanced types of data structures that are used in almost 
+every program or software system that has been developed. So we must have good knowledge about data structures. 
+
+Types:
+
+1.Linear data structure: 
+Data structure where data elements are arranged sequentially or linearly where each and every element is attached to its previous and 
+next adjacent is called a linear data structure. 
+Examples of linear data structure are array, stack, queue, linked list etc.
+   1.Static data structure: Static Data structure has fixed memory size. It is more easier to access the element in static data structure. 
+     Examples of this data structure is array.
+   2.Dynamic data structure: In Dynamic Data Structure the size is not fixed, the size can be randomly updated during run time which may be considered efficient with respect to memory complexity of the code. 
+     Examples of this data structure is queue, stack, etc.
+
+2.Non-linear data structure: 
+Data structure where data elements are not sequentially or linearly are called non-linear data structures. In non-linear data structure 
+we can’t traverse all the elements in single run only. 
+Examples of non-linear data structure are trees and graphs.
+
+In C#:
+Array,ArrayList[dynamic array],LinkedList,Stack,Queue,Dictionary,HashTable,SortedDictionary,StringDictionary,HashSet,SortedSet.
+
+Operations on DS:
+Insertion,Deletion,Traversal,Searching,Sorting,Access.
