@@ -1,0 +1,52 @@
+1.TLE: Time limit exceed
+ two things which will impact your program performance
+ 1.Algorithm
+ 2.Input/Output=>[10^18:O(1),10^8:O(n),10^6:O()]nlogn
+
+ 2.Prefix Sum Algorithm:
+ It is a simple yet powerful technique that allows to perform fast calculation on the sum of elements in a given range
+  example: array A[]=[6,3,-2,4,-1,0,-5]
+           prefix array P[]=[6,9,7,11,10,10,5]
+           sum between range: [0,4]=>P[4],[0,6]=>P[6],[2,6]=>[0,6]-[0,1]=5-9
+           formula: A[i,j]=A[j]-A[i-1]
+
+3.Merge Sort: It is one of efficient sorting algorithm,Its works on the principle of Divide and conquer,It works recursively breaking down a problem into
+two or more sub problems until these become simple enough to be solved directly.
+
+void mergeSort(arr[],int low, int high){
+    if(low<high){
+        mid=low+(high-low)/2;
+        mergeSort(arr,low,mid);
+        mergeSort(arr,mid+1,high);
+        merge(arr,low,mid,high);
+    }
+}
+void merge(arr[],int low,int mid,int high){
+    i=low,j=mid+1;
+    for(k=low;k<=high;k++){
+        aux[k]=arr[k];
+    }
+    for(k=low;k<=high;k++){
+        if(i>mid){
+            arr[k]=aux[j++];
+        }
+        else if(j>high){
+            arr[k]=aux[i++];
+        }
+        else if(aux[j]<aux[i]){
+            arr[k]=aux[j++];
+        }
+        else{
+            arr[k]=aux[i++];
+        }
+    }
+}
+
+4.Sliding window technique:
+5.Two pointer technique:
+It is used for searching normally.It uses two pointer in one loop.mostly related to strings,arrays,linkedlists.
+variants of two pointer:
+opposite directional=>one from start,other from end.[Leetcode :Two Sum II,Valid palindrome,Move zeros,reverse string,remove element]
+equi directional=> both starts at same point but one is fast runner,other one slow runner
+[Leetcode: maximum sum of any contoguous subarray of size k,middle node of linked list,Linked list cycle,Longest substrings without repeating characters
+Remove duplicates from sorted array. ]
