@@ -29,8 +29,9 @@ Output: [1]
  *     }
  * }
  */
-public class Solution {
-    public ListNode SwapPairs(ListNode head) {
+public class SwapPairs
+{
+    public ListNode SwapPairsCal(ListNode head) {
         if(head==null || head.next==null)
             return head;
         ListNode dummy_node =new ListNode(-1, head);

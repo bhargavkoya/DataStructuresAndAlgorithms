@@ -27,8 +27,9 @@ Output: false
 Explanation: There is no cycle in the linked list.
 
 */
-public class Solution {
-    public bool HasCycle(ListNode head) {
+public class HasCycle
+{
+    public bool HasCycleCal(ListNode head) {
         if(head==null)
             return false;
         ListNode slow=head;

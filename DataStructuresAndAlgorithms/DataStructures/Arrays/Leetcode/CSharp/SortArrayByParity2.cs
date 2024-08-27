@@ -18,8 +18,9 @@ Input: nums = [2,3]
 Output: [2,3]
 
 */
-public class Solution {
-    public int[] SortArrayByParityII(int[] nums) {
+public class SortArrayByParityII
+{
+    public int[] SortArrayByParityIICal(int[] nums) {
         int i =0,j = 1; 
         int n = nums.Length;
         while(i < n && j < n) {

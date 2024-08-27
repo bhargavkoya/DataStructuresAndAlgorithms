@@ -15,8 +15,9 @@ Input: nums = [1,3,2,2,3,1]
 Output: [2,3,1,3,1,2]
 */
 
-public class Solution {
-    public void WiggleSort(int[] nums) {
+public class WiggleSort
+{
+    public void WiggleSortCal(int[] nums) {
         Array.Sort(nums);
         int[] res=new int[nums.Length];
         int j=nums.Length-1;

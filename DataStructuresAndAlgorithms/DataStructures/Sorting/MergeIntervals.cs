@@ -15,8 +15,9 @@ Output: [[1,5]]
 Explanation: Intervals [1,4] and [4,5] are considered overlapping.
 
 */
-public class Solution {
-    public int[][] Merge(int[][] intervals) {
+public class Merge
+{
+    public int[][] MergeCal(int[][] intervals) {
         Array.Sort(intervals, (x, y) => x[0].CompareTo(y[0])); // Sort array to avoid following test cases.
         
         List<int[]> result = new();

@@ -20,8 +20,9 @@ Input: nums = [1,1,2,2], n = 2
 Output: [1,2,1,2]
 
 */
-public class Solution {
-    public int[] Shuffle(int[] nums, int n) {
+public class Shuffle
+{
+    public int[] ShuffleCal(int[] nums, int n) {
         int[] arr=new int[2*n];
         int first1=0,second2=n;
         for(int i=0;i<2*n;i++){

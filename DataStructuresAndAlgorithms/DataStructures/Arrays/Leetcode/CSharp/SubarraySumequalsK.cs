@@ -15,8 +15,9 @@ Input: nums = [1,2,3], k = 3
 Output: 2
 
 */
-public class Solution {
-    public int SubarraySum(int[] nums, int k) {
+public class SubarraySum
+{
+    public int SubarraySumCal(int[] nums, int k) {
         Dictionary<int,int> map = new Dictionary<int,int>();
         
         int sum=0,ans=0;

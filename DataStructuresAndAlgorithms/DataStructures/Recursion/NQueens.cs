@@ -19,8 +19,9 @@ Input: n = 1
 Output: [["Q"]]
 
 */
-public class Solution {
-    public IList<IList<string>> SolveNQueens(int n) {
+public class SolveNQueens
+{
+    public IList<IList<string>> SolveNQueensCal(int n) {
         char[,] board = new char[n,n];
         for (int i = 0; i < n; i++)
             for (int j = 0; j < n; j++)
@@ -79,8 +80,9 @@ public class Solution {
 
 /*------------------------------------------------------------------------------------------------------------------*/
 
-public class Solution {
-    public IList<IList<string>> SolveNQueens(int n) {
+public class SolveNQueensTwo
+{
+    public IList<IList<string>> SolveNQueensCal(int n) {
         char[,] board = new char[n,n];
         for (int i = 0; i < n; i++)
             for (int j = 0; j < n; j++)

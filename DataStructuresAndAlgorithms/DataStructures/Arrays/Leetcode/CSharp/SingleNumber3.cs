@@ -20,8 +20,9 @@ Input: nums = [0,1]
 Output: [1,0]
 
 */
-public class Solution {
-    public int[] SingleNumber(int[] nums) {
+public class SingleNumberThree
+{
+    public int[] SingleNumberCal(int[] nums) {
         int xy=0;
         foreach(var i in nums)
             xy^=i;

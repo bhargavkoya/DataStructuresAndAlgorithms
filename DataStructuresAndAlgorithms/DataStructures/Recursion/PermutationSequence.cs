@@ -27,8 +27,9 @@ Input: n = 3, k = 1
 Output: "123"
 
 */
-public class Solution {
-    public string GetPermutation(int n, int k) {
+public class GetPermutation
+{
+    public string GetPermutationCal(int n, int k) {
         int fact = 1;
         List<int> numbers = new List <int>();
         for (int i = 1; i < n; i++) {

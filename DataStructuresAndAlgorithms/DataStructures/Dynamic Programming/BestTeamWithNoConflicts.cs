@@ -24,48 +24,60 @@ Output: 6
 Explanation: It is best to choose the first 3 players. 
 
 */
-public class Solution {
-    public int BestTeamScore(int[] scores, int[] ages) {
-        int n = scores.Length;
-        int[] ansArray = new int[n];
-        node[] nodeArray = new node[n];
-        for(int i = 0; i < n; i++){
-            node node = new node(scores[i], ages[i]);
-            nodeArray[i] = node;
-        }
-        Array.Sort(nodeArray);
-        for(int i = 0; i < n; i++){
-            int max = 0;
-            for(int j = 0; j < i; j++){
-                if(nodeArray[j].score <= nodeArray[i].score){
-                    max = Math.Max(ansArray[j], max);
-                }
-            }
-            ansArray[i] = max + nodeArray[i].score;
-        }
-
-        int maxScore = 0;
-        foreach(int ans in ansArray){
-            maxScore = Math.Max(maxScore, ans);
-        }
-
-        return maxScore;
-
-    }
-}
-public class node : IComparable
+namespace DataStructuresAndAlgorithms
 {
-    public int Score;
-    public int Age;
-    public node(int score,int age){
-        this.Score = score;
-        this.Age=age;
+    public class BestTeamScore
+    {
+        public int BestTeamScoreCal(int[] scores, int[] ages)
+        {
+            int n = scores.Length;
+            int[] ansArray = new int[n];
+            node[] nodeArray = new node[n];
+            for (int i = 0; i < n; i++)
+            {
+                node node = new node(scores[i], ages[i]);
+                nodeArray[i] = node;
+            }
+            Array.Sort(nodeArray);
+            for (int i = 0; i < n; i++)
+            {
+                int max = 0;
+                for (int j = 0; j < i; j++)
+                {
+                    if (nodeArray[j].Score <= nodeArray[i].Score)
+                    {
+                        max = Math.Max(ansArray[j], max);
+                    }
+                }
+                ansArray[i] = max + nodeArray[i].Score;
+            }
+
+            int maxScore = 0;
+            foreach (int ans in ansArray)
+            {
+                maxScore = Math.Max(maxScore, ans);
+            }
+
+            return maxScore;
+
+        }
     }
-    public int CompareTo(object o){
-        node n=o as node;
-        if(this.Age==n.Age)
-            return this.Score-n.Score;
-        return this.Age -n.Age;
+    public class node : IComparable
+    {
+        public int Score;
+        public int Age;
+        public node(int score, int age)
+        {
+            this.Score = score;
+            this.Age = age;
+        }
+        public int CompareTo(object o)
+        {
+            node? n = o as node;
+            if (this.Age == n.Age)
+                return this.Score - n.Score;
+            return this.Age - n.Age;
+        }
+
     }
-    
 }

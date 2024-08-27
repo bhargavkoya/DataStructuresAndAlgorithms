@@ -41,8 +41,9 @@ Output: 480
 Explanation: The sum of all XOR totals for every subset is 480.
 */
 
-public class Solution {
-    public int SubsetXORSum(int[] nums) {
+public class SubsetXORSum
+{
+    public int SubsetXORSumCal(int[] nums) {
         return helper(nums,0,0);
     }
     public int helper(int[] nums,int level,int currentXor){

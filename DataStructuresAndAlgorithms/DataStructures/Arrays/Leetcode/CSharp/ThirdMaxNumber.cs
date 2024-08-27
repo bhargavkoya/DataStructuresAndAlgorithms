@@ -31,8 +31,9 @@ The third distinct maximum is 1.
 
 */
 
-public class Solution {
-    public int ThirdMax(int[] nums) {
+public class ThirdMax
+{
+    public int ThirdMaxCal(int[] nums) {
         long max=long.MinValue;
         long secondmax=max;
         long thirdmax=secondmax;

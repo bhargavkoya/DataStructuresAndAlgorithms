@@ -7,8 +7,9 @@ The transpose of a matrix is the matrix flipped over its main diagonal, switchin
 */
 
 
-public class Solution {
-    public int[][] Transpose(int[][] matrix) {
+public class Transpose
+{
+    public int[][] TransposeCal(int[][] matrix) {
       if (matrix.Length != matrix[0].Length)
         {
             var result = new int[matrix[0].Length][];

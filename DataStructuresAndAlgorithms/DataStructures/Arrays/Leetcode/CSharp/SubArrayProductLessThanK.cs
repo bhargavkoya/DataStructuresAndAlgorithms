@@ -14,8 +14,9 @@ Example 2:
 Input: nums = [1,2,3], k = 0
 Output: 0
 */
-public class Solution {
-    public int NumSubarrayProductLessThanK(int[] nums, int k) {
+public class NumSubarrayProductLessThanK
+{
+    public int NumSubarrayProductLessThanKCal(int[] nums, int k) {
             int start=0,end=0;
             int count=0;
             int product=nums[0];

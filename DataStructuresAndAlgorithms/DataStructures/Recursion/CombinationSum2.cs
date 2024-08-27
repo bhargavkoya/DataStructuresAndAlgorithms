@@ -27,7 +27,8 @@ Output:
 ]
 
 */
-public class Solution {
+public class CombinationSum2
+{
     public  void solve(int idx, int target, int[] nums, List<int> path, List<IList<int>> res){
         if(target == 0){
             res.Add(new List<int>(path));
@@ -45,7 +46,7 @@ public class Solution {
         return ;
     }
 
-    public IList<IList<int>> CombinationSum2(int[] candidates, int target) {
+    public IList<IList<int>> CombinationSum2Cal(int[] candidates, int target) {
         List<IList<int>> res=new List<IList<int>>();
         Array.Sort(candidates);
         solve(0,target,candidates,new List<int>(),res);

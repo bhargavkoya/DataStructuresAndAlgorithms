@@ -25,10 +25,11 @@ Your task is to complete the function graphColoring() which takes the 2d-array g
 Note: In Example there are Edges not the graph.Graph will be like, if there is an edge between vertex X and vertex Y graph[] will contain 1 at graph[X-1][Y-1], else 0. In 2d-array graph[ ], nodes are 0-based indexed, i.e. from 0 to N-1.Function will be contain 2-D graph not the edges.
 
 */
-class Solution {
+class graphColoring
+{
     // Complete this function
   public
-    int graphColoring(int[, ] graph, int m, int v) {
+    int graphColoringCal(int[, ] graph, int m, int v) {
         // Your code here
             int[] color = new int[v];
             if (solve(0, color,m, v,graph)) return 1;

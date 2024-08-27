@@ -26,8 +26,9 @@ Output: [2,3]
  *     }
  * }
  */
-public class Solution {
-    public ListNode DeleteDuplicates(ListNode head) {
+public class DeleteDuplicates
+{
+    public ListNode DeleteDuplicatesCal(ListNode head) {
         ListNode prev = null;
         ListNode current = head;
         while((current!=null) && (current.next!=null)){

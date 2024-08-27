@@ -20,8 +20,9 @@ Explanation: The input board is shown above and the only valid solution is shown
 
 
 */
-public class Solution {
-    public void SolveSudoku(char[][] board) {
+public class SolveSudoku
+{
+    public void SolveSudokuCal(char[][] board) {
             Solve(board);
     }
     

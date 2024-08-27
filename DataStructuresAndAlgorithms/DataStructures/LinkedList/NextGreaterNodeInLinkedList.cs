@@ -30,8 +30,9 @@ Output: [7,0,5,5,0]
  *     }
  * }
  */
-public class Solution {
-    public int[] NextLargerNodes(ListNode head) {
+public class NextLargerNodes
+{
+    public int[] NextLargerNodeCal(ListNode head) {
        List<int> a=new List<int>();
         while(head!=null){
             a.Add(head.val);

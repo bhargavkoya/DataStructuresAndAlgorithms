@@ -31,8 +31,9 @@ Explanation: The ranges are:
 
 */
 
-public class Solution {
-    public IList<string> SummaryRanges(int[] nums) {
+public class SummaryRanges
+{
+    public IList<string> SummaryRangesCal(int[] nums) {
         var res=new List<string>();
         if(nums.Length==0) return res;
         int prev=nums[0];

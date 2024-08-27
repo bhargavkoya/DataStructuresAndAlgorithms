@@ -15,8 +15,9 @@ Input: s = "a"
 Output: [["a"]]
 
 */
-public class Solution {
-    public IList<IList<string>> Partition(string s) {
+public class Partition
+{
+    public IList<IList<string>> PartitionCal(string s) {
         List<IList<String>> res = new List<IList<String>>();
         List <String> path = new List<String>();
         partitionHelper(0, s, path, res);

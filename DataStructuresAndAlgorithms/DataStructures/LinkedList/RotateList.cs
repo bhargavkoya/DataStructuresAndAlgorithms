@@ -26,8 +26,9 @@ Output: [2,0,1]
  *     }
  * }
  */
-public class Solution {
-    public ListNode RotateRight(ListNode head, int k) {
+public class RotateRight
+{
+    public ListNode RotateRightCal(ListNode head, int k) {
        if(head==null)
            return head;
         

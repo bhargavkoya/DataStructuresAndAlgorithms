@@ -1,38 +1,38 @@
-Node Insert(Node root, int data) 
-{ 
+//Node Insert(Node root, int data) 
+//{ 
 
-    If(root==NULL) 
+//    If(root==NULL) 
 
-    { 
+//    { 
 
-        root=new Node(data); 
+//        root=new Node(data); 
 
-        Return root; 
+//        Return root; 
 
     
 
-    } 
+//    } 
 
-    Else If(data<=root.data) 
+//    Else If(data<=root.data) 
 
-    { 
+//    { 
 
-        root.left=Insert(root.left,data); 
+//        root.left=Insert(root.left,data); 
 
-    } 
+//    } 
 
-    Else 
+//    Else 
 
-    { 
+//    { 
 
-         root.right=Insert(root.right,data); 
+//         root.right=Insert(root.right,data); 
 
-    } 
-
- 
-
- Return root; 
+//    } 
 
  
 
-} 
+// Return root; 
+
+ 
+
+//} 

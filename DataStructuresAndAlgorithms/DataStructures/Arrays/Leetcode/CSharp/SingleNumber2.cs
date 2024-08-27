@@ -14,8 +14,9 @@ Example 2:
 Input: nums = [0,1,0,1,0,1,99]
 Output: 99
 */
-public class Solution {
-    public int SingleNumber(int[] nums) {
+public class SingleNumber
+{
+    public int SingleNumberCal(int[] nums) {
         int ones=0,twos=0;
         foreach(var i in nums){
             ones=(ones^i) & (~twos);

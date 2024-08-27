@@ -24,8 +24,9 @@ Explanation: 14 is not ugly since it includes the prime factor 7.
 
 */
 
-public class Solution {
-    public bool IsUgly(int n) {
+public class IsUgly
+{
+    public bool IsUglyCal(int n) {
         if(n<=0)
             return false;
         int[] a=new int[]{2,3,5};

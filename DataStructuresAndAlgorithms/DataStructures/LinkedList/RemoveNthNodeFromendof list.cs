@@ -29,8 +29,9 @@ Output: [1]
  *     }
  * }
  */
-public class Solution {
-    public ListNode RemoveNthFromEnd(ListNode head, int n) {
+public class RemoveNthFromEnd
+{
+    public ListNode RemoveNthFromEndCal(ListNode head, int n) {
         int count = 0;
         ListNode temp = head;
         while (temp != null) {

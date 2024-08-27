@@ -27,8 +27,9 @@ Explanation: You are given the third node with value 1, the linked list should b
  *     public ListNode(int x) { val = x; }
  * }
  */
-public class Solution {
-    public void DeleteNode(ListNode node) {
+public class CopyRandomList
+{
+    public void DeleteNodeCal(ListNode node) {
         int val = node.next.val;
         
         node.next = node.next.next;

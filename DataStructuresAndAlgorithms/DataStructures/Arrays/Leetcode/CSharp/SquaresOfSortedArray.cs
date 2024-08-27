@@ -15,8 +15,9 @@ Input: nums = [-7,-3,2,3,11]
 Output: [4,9,9,49,121]
 
 */
-public class Solution {
-    public int[] SortedSquares(int[] nums) {
+public class SortedSquares
+{
+    public int[] SortedSquaresCal(int[] nums) {
         int left = 0, n = nums.Length;
         int right = n - 1, square = 0;
         int[] res = new int[n];

@@ -12,8 +12,9 @@ Return the resulting integer after performing the operations described above.
 
 
 */
-public class Solution {
-    public int GetLucky(string s, int k) {
+public class SubsetXORSum
+{
+    public int GetLuckyCal(string s, int k) {
         int num =0;
         
          

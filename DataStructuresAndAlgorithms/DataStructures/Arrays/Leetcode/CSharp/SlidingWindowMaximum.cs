@@ -18,8 +18,9 @@ Window position                Max
 
  */
 
- public class Solution {
-    public int[] MaxSlidingWindow(int[] nums, int k) {
+ public class MaxSlidingWindow
+{
+    public int[] MaxSlidingWindowCal(int[] nums, int k) {
                 // Create a Double Ended Queue, Qi that
         // will store indexes of array elements
         // The queue will store indexes of useful

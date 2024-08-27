@@ -32,8 +32,9 @@ Output: [0]
  *     }
  * }
  */
-public class Solution {
-    public ListNode MergeTwoLists(ListNode list1, ListNode list2) {
+public class MergeTwoLists
+{
+    public ListNode MergeTwoListsCal(ListNode list1, ListNode list2) {
         ListNode res=new ListNode(0);
         ListNode temp=res;
        // ListNode temp1=list1;

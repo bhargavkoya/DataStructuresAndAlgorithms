@@ -25,8 +25,11 @@ Input: emails = ["a@leetcode.com","b@leetcode.com","c@leetcode.com"]
 Output: 3
 
 */
-public class Solution {
-    public int NumUniqueEmails(string[] emails) {
+using System.Text;
+
+public class NumUniqueEmails
+{
+    public int NumUniqueEmailsCal(string[] emails) {
        if(emails.Length == 0)
         {
             return 0; 

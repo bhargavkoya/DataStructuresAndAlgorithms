@@ -15,7 +15,8 @@ Input: nums = [0]
 Output: [[],[0]]
 
 */
-public class Solution {
+public class SubsetsWithDup
+{
    public  void findSubsets(int ind, int[] nums, List<int> ds, List<IList<int>> ansList) {
         ansList.Add(new List<int>(ds)); 
         for(int i = ind;i<nums.Length;i++) {
@@ -27,7 +28,7 @@ public class Solution {
         
     }
 
-    public IList<IList<int>> SubsetsWithDup(int[] nums) {
+    public IList<IList<int>> SubsetsWithDupCal(int[] nums) {
         List<IList<int>> ansList=new List<IList<int>>();
         Array.Sort(nums);
         findSubsets(0,nums,new List<int>(),ansList);

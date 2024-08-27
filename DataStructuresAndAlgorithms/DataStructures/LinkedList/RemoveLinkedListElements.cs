@@ -30,8 +30,9 @@ Output: []
  *     }
  * }
  */
-public class Solution {
-    public ListNode RemoveElements(ListNode head, int val) {
+public class RemoveElements
+{
+    public ListNode RemoveElementsCal(ListNode head, int val) {
         ListNode dummy =new ListNode(-1,head);
         ListNode prev = dummy;
         while(head!=null){

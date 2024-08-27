@@ -31,55 +31,68 @@ Output: [0]
  *     }
  * }
  */
-public class Solution {
-    public ListNode AddTwoNumbers(ListNode l1, ListNode l2) {
-        Stack<int> st1=new Stack<int>();
-        Stack<int> st2=new Stack<int>();
-        ListNode result=null;
-        while(l1!=null)    
+
+    //public class ListNode
+    //{
+    //    public int val;
+    //    public ListNode next;
+    //    public ListNode(int val = 0, ListNode next = null)
+    //    {
+    //        this.val = val;
+    //        this.next = next;
+    //    }
+    //}
+    public class AddTwoNumbersTwo
+    {
+        public ListNode AddTwoNumbersCal(ListNode l1, ListNode l2)
         {
-              st1.Push(l1.val);
-            l1=l1.next;
-        }
-        while(l2!=null)    
-        {
-               st2.Push(l2.val);
-               l2=l2.next;
-        }
-        int a,b,carry=0;
-        while(st1.Count>0 || st2.Count>0)
-        {
-              a=0;b=0;
-            if(st1.Count>0)
+            Stack<int> st1 = new Stack<int>();
+            Stack<int> st2 = new Stack<int>();
+            ListNode result = null;
+            while (l1 != null)
             {
-                  a=st1.Peek();
-                st1.Pop();
+                st1.Push(l1.val);
+                l1 = l1.next;
             }
-            if(st2.Count>0)
+            while (l2 != null)
             {
-                  b=st2.Peek();
-                st2.Pop();
+                st2.Push(l2.val);
+                l2 = l2.next;
             }
-               int add=(a+b+carry);
-              carry=add/10;
-               ListNode temp=new ListNode(add%10);
-               if(result==null)
-               {
-                     result=temp;
-               }
-            else
+            int a, b, carry = 0;
+            while (st1.Count > 0 || st2.Count > 0)
             {
-                 temp.next=result;
-                 result=temp;
+                a = 0; b = 0;
+                if (st1.Count > 0)
+                {
+                    a = st1.Peek();
+                    st1.Pop();
+                }
+                if (st2.Count > 0)
+                {
+                    b = st2.Peek();
+                    st2.Pop();
+                }
+                int add = (a + b + carry);
+                carry = add / 10;
+                ListNode temp = new ListNode(add % 10);
+                if (result == null)
+                {
+                    result = temp;
+                }
+                else
+                {
+                    temp.next = result;
+                    result = temp;
+                }
             }
+            if (carry != 0)
+            {
+                ListNode temp = new ListNode(carry);
+                temp.next = result;
+                result = temp;
+            }
+            return result;
+
         }
-        if(carry!=0)
-        {
-             ListNode temp=new ListNode(carry);
-            temp.next=result;
-            result=temp;
-        }
-        return result;
-        
     }
-}

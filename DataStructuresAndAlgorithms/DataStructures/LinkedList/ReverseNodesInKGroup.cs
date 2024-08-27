@@ -30,7 +30,8 @@ Output: [3,2,1,4,5]
  *     }
  * }
  */
-public class Solution {
+public class ReverseKGroup
+{
     public ListNode reverseLinkedList(ListNode head,int k){
         ListNode new_head = null; 
         ListNode ptr = head; 
@@ -46,7 +47,7 @@ public class Solution {
 
         return new_head; 
     }
-    public ListNode ReverseKGroup(ListNode head, int k) {
+    public ListNode ReverseKGroupCal(ListNode head, int k) {
         ListNode temp=head;
         ListNode newhead=null;
         ListNode tail=null;

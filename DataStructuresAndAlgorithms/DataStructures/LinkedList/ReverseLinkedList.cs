@@ -28,12 +28,13 @@ Output: []
  *     }
  * }
  */
-public class Solution {
-    public ListNode ReverseList(ListNode head) {
+public class ReverseList
+{
+    public ListNode ReverseListCal(ListNode head) {
         if(head==null || head.next==null){
             return head;
         }
-        ListNode temp=ReverseList(head.next);
+        ListNode temp=ReverseListCal(head.next);
         head.next.next=head;
         head.next=null;
         

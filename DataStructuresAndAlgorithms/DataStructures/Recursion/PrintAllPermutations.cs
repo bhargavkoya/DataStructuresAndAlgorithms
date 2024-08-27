@@ -1,4 +1,5 @@
-public class Solution{
+public class permutations
+{
     //With additional space
     public void recurPermute1(int[] arr,List<int> ds,List<IList<int>> res,bool[] freq){
         if(ds.Count==arr.Length){
@@ -9,7 +10,7 @@ public class Solution{
             if(!freq[i]){
                 ds.Add(arr[i]);
                 freq[i]=true;
-                recurPermute(arr,ds,res,freq);
+                recurPermute1(arr,ds,res,freq);
                 ds.RemoveAt(ds.Count-1);
                 freq[i]=false;
             }
@@ -17,7 +18,7 @@ public class Solution{
     }
 
     //without additional space
-    public void recurPermute2(int ind,int[] arr,List<IList<int>> res){
+    public void recurPermute2(int ind,int[] arr,List<List<int>> res){
         if(ind==arr.Length){
             List<int> ds=new List<int>();
             for(int k=0;k<arr.Length;k++)
@@ -34,11 +35,11 @@ public class Solution{
     public void swap(int i,int j,int[] arr){
         int temp=arr[j];
         arr[j]=arr[i];
-        arr[i=temp;]
+        arr[i] = temp;
     }
 
-    public List<List<int>> permutations(int[] arr){
-        List<IList<int>> res=new List<IList<int>>();
+    public List<List<int>> permutationsCal(int[] arr){
+        List<List<int>> res=new List<List<int>>();
         bool[] freq=new bool[arr.Length];
         recurPermute2(0,arr,res);
         return res;

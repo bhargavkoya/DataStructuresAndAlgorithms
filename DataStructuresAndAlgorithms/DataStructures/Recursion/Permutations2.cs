@@ -16,8 +16,9 @@ Input: nums = [1,2,3]
 Output: [[1,2,3],[1,3,2],[2,1,3],[2,3,1],[3,1,2],[3,2,1]]
 
 */
-public class Solution {
-    public IList<IList<int>> PermuteUnique(int[] nums) {
+public class PermuteUnique
+{
+    public IList<IList<int>> PermuteUniqueCal(int[] nums) {
          List<IList<int>> res=new List<IList<int>>();
         Array.Sort(nums);
         helper(nums,new List<int>(),new List<int>(),res);

@@ -35,8 +35,9 @@ Output: [0,-1,4,5]
 Explanation: [0,-1,4,5] is able to achieve the given subset sums.
 
 */
-public class Solution {
-    public int[] RecoverArray(int n, int[] sums) {
+public class RecoverArray
+{
+    public int[] RecoverArrayCal(int n, int[] sums) {
         Array.Sort(sums);
         int m = sums.Length, zeroShift = 0;
         int[] res = new int[n];

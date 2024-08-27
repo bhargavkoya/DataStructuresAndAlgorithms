@@ -9,8 +9,9 @@ Note:
 A Sudoku board (partially filled) could be valid but is not necessarily solvable.
 Only the filled cells need to be validated according to the mentioned rules.
 */
-public class Solution {
-    public bool IsValidSudoku(char[][] board) {
+public class IsValidSudoku
+{
+    public bool IsValidSudokuCal(char[][] board) {
         HashSet<string> hresult = new HashSet<string>();
         
         for(int i=0; i < 9; i++){

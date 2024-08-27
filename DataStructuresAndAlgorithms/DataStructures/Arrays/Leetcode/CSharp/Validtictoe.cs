@@ -1,5 +1,6 @@
-public class Solution {
-    public bool ValidTicTacToe(string[] board) {
+public class ValidTicTacToe
+{
+    public bool ValidTicTacToeCal(string[] board) {
         int cx=0, co=0;
           for(int i=0;i<3;i++)
           {

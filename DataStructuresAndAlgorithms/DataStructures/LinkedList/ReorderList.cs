@@ -32,8 +32,9 @@ Output: [1,5,2,4,3]
  *     }
  * }
  */
-public class Solution {
-    public void ReorderList(ListNode head) {
+public class ReorderList
+{
+    public void ReorderListCal(ListNode head) {
         ListNode slow=head;
         ListNode fast=head.next;
         

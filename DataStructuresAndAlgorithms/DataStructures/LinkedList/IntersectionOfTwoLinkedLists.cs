@@ -53,8 +53,9 @@ Explanation: The two lists do not intersect, so return null.
  *     public ListNode(int x) { val = x; }
  * }
  */
-public class Solution {
-    public ListNode GetIntersectionNode(ListNode headA, ListNode headB) {
+public class GetIntersectionNode
+{
+    public ListNode GetIntersectionNodeCal(ListNode headA, ListNode headB) {
         ListNode a=headA;
         ListNode b=headB;
         if(a==null || b==null)

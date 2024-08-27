@@ -19,8 +19,9 @@ Input: nums = [1]
 Output: 1
 
 */
-public class Solution {
-    public int SingleNumber(int[] nums) {
+public class SingleNumber
+{
+    public int SingleNumberCal(int[] nums) {
         int n=nums.Length;
         int x=0;
         foreach(var i in nums){

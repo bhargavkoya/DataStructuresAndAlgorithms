@@ -1,17 +1,17 @@
-Bool Search(Node root, int data) 
+//Bool Search(Node root, int data) 
 
-{ 
+//{ 
 
- if(root==NULL) return false; 
+// if(root==NULL) return false; 
 
- if(root.data==data) return true; 
+// if(root.data==data) return true; 
 
- if(data<=root.data) 
+// if(data<=root.data) 
 
-   return Search(root.left,data); 
+//   return Search(root.left,data); 
 
-Else  
+//Else  
 
-    return Search(root.right,data); 
+//    return Search(root.right,data); 
 
-} 
+//} 

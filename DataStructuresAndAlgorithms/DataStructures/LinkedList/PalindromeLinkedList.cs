@@ -26,8 +26,9 @@ Output: false
  *     }
  * }
  */
-public class Solution {
-    public bool IsPalindrome(ListNode head) {
+public class IsPalindrome
+{
+    public bool IsPalindromeCal(ListNode head) {
         ListNode slow=head;
         ListNode fast=head;
 

@@ -14,8 +14,9 @@ Output: [1,3]
 Explanation: The sum of 2 and 4 is 6. Therefore index1 = 1, index2 = 3. We return [1, 3].
 
 */
-public class Solution {
-    public int[] TwoSum(int[] numbers, int target) {
+public class TwoSum
+{
+    public int[] TwoSumCal(int[] numbers, int target) {
         int start=0;
         int end=numbers.Length-1;
         int[] result=new int[2];

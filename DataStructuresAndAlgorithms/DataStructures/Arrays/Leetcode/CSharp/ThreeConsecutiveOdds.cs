@@ -17,8 +17,9 @@ Explanation: [5,7,23] are three consecutive odds.
 */
 
 
-public class Solution {
-    public bool ThreeConsecutiveOdds(int[] arr) {
+public class ThreeConsecutiveOdds
+{
+    public bool ThreeConsecutiveOddsCal(int[] arr) {
     if(arr.Length<3){
             return false;
         }

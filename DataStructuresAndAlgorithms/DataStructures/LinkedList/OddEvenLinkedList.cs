@@ -32,8 +32,9 @@ Output: [2,3,6,7,1,5,4]
  *     }
  * }
  */
-public class Solution {
-    public ListNode OddEvenList(ListNode head) {
+public class OddEvenList
+{
+    public ListNode OddEvenListCal(ListNode head) {
         if(head==null)
             return null;
         ListNode odd=head;

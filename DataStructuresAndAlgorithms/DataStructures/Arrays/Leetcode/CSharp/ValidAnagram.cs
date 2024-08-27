@@ -23,8 +23,9 @@ Output: false
         return new string(sc).Equals(new string(tc));
     }
 }*/
-public class Solution {
-    public bool IsAnagram(string s, string t) {
+public class IsAnagram
+{
+    public bool IsAnagramCal(string s, string t) {
 
      if(s.Length != t.Length){
             return false;

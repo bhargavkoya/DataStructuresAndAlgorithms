@@ -38,7 +38,8 @@ Explanation: There is no cycle in the linked list.
  *     }
  * }
  */
-public class Solution {
+public class DetectCycle
+{
      private ListNode getIntersect(ListNode head) { 
 
         ListNode tortoise = head; 
@@ -66,7 +67,7 @@ public class Solution {
     } 
 
  
-    public ListNode DetectCycle(ListNode head) {
+    public ListNode DetectCycleCal(ListNode head) {
         if (head == null) { 
 
             return null; 

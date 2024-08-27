@@ -17,8 +17,9 @@ Input: nums = [2,0,1]
 Output: [0,1,2]
 
 */
-public class Solution {
-    public void SortColors(int[] nums) {
+public class SortColors
+{
+    public void SortColorsCal(int[] nums) {
         int z = 0; int o = 0;int t = 0;
         foreach(var item in nums){
             if(item ==0) z++;

@@ -22,8 +22,9 @@ Input: nums = [3,3], target = 6
 Output: [0,1]
 
 */
-public class Solution {
-    public int[] TwoSum(int[] nums, int target) {
+public class TwoSum
+{
+    public int[] TwoSumCal(int[] nums, int target) {
         //Array.Sort(nums); 
         Dictionary<int, int> dict = new Dictionary<int, int>();
         for (int i = 0; i < nums.Length; i++)

@@ -33,8 +33,9 @@ Output: [1]
  *     }
  * }
  */
-public class Solution {
-    public ListNode RemoveZeroSumSublists(ListNode head) {
+public class RemoveZeroSumSublists
+{
+    public ListNode RemoveZeroSumSublistsCal(ListNode head) {
         ListNode dummy=new ListNode();
         dummy.next=head;
         Dictionary<int,ListNode> map=new Dictionary<int,ListNode>();

@@ -25,7 +25,8 @@ Input: candidates = [2], target = 1
 Output: []
 
 */
-public class Solution {
+public class CombinationSum
+{
     
     public void combination(int[] candidates, int target, List<int> currComb, int currSum, int currIndex, List<IList<int>> ans){
         if(currSum>target) return; //backtrack
@@ -44,7 +45,7 @@ public class Solution {
         
     }
 
-    public IList<IList<int>> CombinationSum(int[] candidates, int target) {
+    public IList<IList<int>> CombinationSumCal(int[] candidates, int target) {
         List<IList<int>> ans=new List<IList<int>>();
         combination(candidates,target,new List<int>(),0,0,ans);
         return ans;

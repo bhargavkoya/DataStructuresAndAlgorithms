@@ -22,8 +22,9 @@ Input: nums = [1], queries = [[4,0]]
 Output: [0]
 
 */
-public class Solution {
-    public int[] SumEvenAfterQueries(int[] nums, int[][] queries) {
+public class SumEvenAfterQueries
+{
+    public int[] SumEvenAfterQueriesCal(int[] nums, int[][] queries) {
         int sum = 0;
         for(int i = 0;i < nums.Length;i++){
             if(nums[i] % 2 == 0){
